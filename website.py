@@ -1,4 +1,3 @@
-from PIL import Image
 import requests
 import streamlit as st
 
@@ -16,7 +15,6 @@ st.title("I am just someone trying to program")
 st.write("This Website is a Tryout")
 
 # ---- Load Assets ---
-img_contact_form = Image.open("images/image_coding.jpg")
 
 # ---- What I DO ----
 with st.container():
@@ -34,8 +32,6 @@ with st.container():
     st.header("My Projects")
     st.write("##")
     image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_contact_form)
     with text_column:
         st.subheader("I don't have any particullar Projects")
         st.write("But i am trying to learn coding as soon as possible to know how to make good sites/apps.")
